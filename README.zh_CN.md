@@ -11,7 +11,7 @@
   * libpoppler-qt5-1 
   * libqt5concurrent5 
   * libtag1v5
-  * deepin-desktop-schemas
+  * velora-desktop-schemas
   * dde-daemon
   * startdde
   * deepin-anything-server
