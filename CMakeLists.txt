@@ -154,8 +154,8 @@ add_subdirectory(src/preview-plugin)
 add_subdirectory(src/tools/semanticparser)
 add_subdirectory(src/tools/luceneengine)
 add_subdirectory(3rdparty/antlr4/antlr4-runtime)
-
+add_subdirectory(src/grand-search-shell-plugin)
 # shell-plugin仅在Qt6下被include
-if (${BUILD_OS_VERSION} GREATER_EQUAL "25" AND QT_VERSION_MAJOR EQUAL 6)
-    add_subdirectory(src/grand-search-shell-plugin)
-endif()
+# if (${BUILD_OS_VERSION} GREATER_EQUAL "25" AND QT_VERSION_MAJOR EQUAL 6)
+#     add_subdirectory(src/grand-search-shell-plugin)
+# endif()
