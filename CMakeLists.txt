@@ -128,16 +128,17 @@ add_definitions(-DPLUGIN_SEARCHER_DIR="${PLUGIN_SEARCHER_DIR}")
 # 获取系统版本
 if (NOT DEFINED BUILD_OS_VERSION OR BUILD_OS_VERSION STREQUAL "")
     # 读取文件并提取Version值
-    file(STRINGS "/etc/os-version" FILE_CONTENTS REGEX "^MajorVersion=")
+    # file(STRINGS "/etc/os-version" FILE_CONTENTS REGEX "^MajorVersion=")
 
-    # 遍历文件内容，查找Version行
-    foreach(LINE ${FILE_CONTENTS})
-        # 检查是否是Version行
-        if(LINE MATCHES "Version=([0-9]+)")
-            # 提取版本号
-            set(BUILD_OS_VERSION "${CMAKE_MATCH_1}")
-        endif()
-    endforeach()
+    # # 遍历文件内容，查找Version行
+    # foreach(LINE ${FILE_CONTENTS})
+    #     # 检查是否是Version行
+    #     if(LINE MATCHES "Version=([0-9]+)")
+    #         # 提取版本号
+    #         set(BUILD_OS_VERSION "${CMAKE_MATCH_1}")
+    #     endif()
+    # endforeach()
+    set(BUILD_OS_VERSION "25")
 
     message("Get BUILD_OS_VERSION from os-version ${BUILD_OS_VERSION}")
 else()
