@@ -17,7 +17,7 @@ namespace SearchPluginV1 {
 class GrandSearchPluginInterface : QObject
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.dde.GrandSearch.SearchPlugin")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.GrandSearch.SearchPlugin")
 public slots:
     QString Search(const QString &json);
     bool Action(const QString &json);

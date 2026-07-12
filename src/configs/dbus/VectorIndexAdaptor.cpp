@@ -29,7 +29,7 @@ VectorIndexAdaptor::~VectorIndexAdaptor()
 
 bool VectorIndexAdaptor::Create(const QString &appID, const QStringList &files)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.Create
+    // handle method call org.lingmo.ai.daemon.VectorIndex.Create
     bool out0;
     QMetaObject::invokeMethod(parent(), "Create", Q_RETURN_ARG(bool, out0), Q_ARG(QString, appID), Q_ARG(QStringList, files));
     return out0;
@@ -37,7 +37,7 @@ bool VectorIndexAdaptor::Create(const QString &appID, const QStringList &files)
 
 bool VectorIndexAdaptor::Delete(const QString &appID, const QStringList &files)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.Delete
+    // handle method call org.lingmo.ai.daemon.VectorIndex.Delete
     bool out0;
     QMetaObject::invokeMethod(parent(), "Delete", Q_RETURN_ARG(bool, out0), Q_ARG(QString, appID), Q_ARG(QStringList, files));
     return out0;
@@ -45,7 +45,7 @@ bool VectorIndexAdaptor::Delete(const QString &appID, const QStringList &files)
 
 QStringList VectorIndexAdaptor::DocFiles(const QString &appID)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.DocFiles
+    // handle method call org.lingmo.ai.daemon.VectorIndex.DocFiles
     QStringList out0;
     QMetaObject::invokeMethod(parent(), "DocFiles", Q_RETURN_ARG(QStringList, out0), Q_ARG(QString, appID));
     return out0;
@@ -53,7 +53,7 @@ QStringList VectorIndexAdaptor::DocFiles(const QString &appID)
 
 bool VectorIndexAdaptor::Enable()
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.Enable
+    // handle method call org.lingmo.ai.daemon.VectorIndex.Enable
     bool out0;
     QMetaObject::invokeMethod(parent(), "Enable", Q_RETURN_ARG(bool, out0));
     return out0;
@@ -61,7 +61,7 @@ bool VectorIndexAdaptor::Enable()
 
 QString VectorIndexAdaptor::Search(const QString &appID, const QString &query, int topK)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.Search
+    // handle method call org.lingmo.ai.daemon.VectorIndex.Search
     QString out0;
     QMetaObject::invokeMethod(parent(), "Search", Q_RETURN_ARG(QString, out0), Q_ARG(QString, appID), Q_ARG(QString, query), Q_ARG(int, topK));
     return out0;
@@ -69,7 +69,7 @@ QString VectorIndexAdaptor::Search(const QString &appID, const QString &query, i
 
 QString VectorIndexAdaptor::getAutoIndexStatus(const QString &appID)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.getAutoIndexStatus
+    // handle method call org.lingmo.ai.daemon.VectorIndex.getAutoIndexStatus
     QString out0;
     QMetaObject::invokeMethod(parent(), "getAutoIndexStatus", Q_RETURN_ARG(QString, out0), Q_ARG(QString, appID));
     return out0;
@@ -77,7 +77,7 @@ QString VectorIndexAdaptor::getAutoIndexStatus(const QString &appID)
 
 void VectorIndexAdaptor::setAutoIndex(const QString &appID, bool on)
 {
-    // handle method call org.deepin.ai.daemon.VectorIndex.setAutoIndex
+    // handle method call org.lingmo.ai.daemon.VectorIndex.setAutoIndex
     QMetaObject::invokeMethod(parent(), "setAutoIndex", Q_ARG(QString, appID), Q_ARG(bool, on));
 }
 

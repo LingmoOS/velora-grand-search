@@ -12,9 +12,9 @@
 #include <QMap>
 
 //后端程序DBus服务
-#define GrandSearchServiceName          "org.deepin.dde.GrandSearchDaemon"
-#define GrandSearchServicePath          "/org/deepin/dde/GrandSearchDaemon"
-#define GrandSearchServiceInterface     "org.deepin.dde.GrandSearchDaemon"
+#define GrandSearchServiceName          "org.lingmo.GrandSearchDaemon"
+#define GrandSearchServicePath          "/org/lingmo/GrandSearchDaemon"
+#define GrandSearchServiceInterface     "org.lingmo.GrandSearchDaemon"
 
 namespace GrandSearch {
 

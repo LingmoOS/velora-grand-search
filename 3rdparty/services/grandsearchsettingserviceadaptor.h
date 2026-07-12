@@ -21,14 +21,14 @@ QT_END_NAMESPACE
 namespace GrandSearchSetting {
 
 /*
- * Adaptor class for interface com.deepin.dde.GrandSearchSetting
+ * Adaptor class for interface com.lingmo.GrandSearchSetting
  */
 class GrandSearchSettingServiceAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.dde.GrandSearchSetting")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.GrandSearchSetting")
     Q_CLASSINFO("D-Bus Introspection", ""
-"  <interface name=\"com.deepin.dde.GrandSearchSetting\">\n"
+"  <interface name=\"com.lingmo.GrandSearchSetting\">\n"
 "    <method name=\"Show\">\n"
 "    </method>\n"
 "  </interface>\n"

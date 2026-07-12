@@ -8,7 +8,7 @@
 #include <QObject>
 #include <QScopedPointer>
 
-#define GrandSearchSettingServiceName          "com.deepin.dde.GrandSearchSetting"
+#define GrandSearchSettingServiceName          "com.lingmo.GrandSearchSetting"
 #define GrandSearchSettingServicePath          "/com/deepin/dde/GrandSearchSetting"
 #define GrandSearchSettingServiceInterface     "com.deepin.dde.GrandSearchSetting"
 

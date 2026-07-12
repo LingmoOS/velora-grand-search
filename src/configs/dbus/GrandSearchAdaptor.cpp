@@ -29,7 +29,7 @@ GrandSearchAdaptor::~GrandSearchAdaptor()
 
 bool GrandSearchAdaptor::IsVisible()
 {
-    // handle method call com.deepin.dde.GrandSearch.IsVisible
+    // handle method call com.lingmo.GrandSearch.IsVisible
     bool out0;
     QMetaObject::invokeMethod(parent(), "IsVisible", Q_RETURN_ARG(bool, out0));
     return out0;
@@ -37,7 +37,7 @@ bool GrandSearchAdaptor::IsVisible()
 
 void GrandSearchAdaptor::SetVisible(bool visible)
 {
-    // handle method call com.deepin.dde.GrandSearch.SetVisible
+    // handle method call com.lingmo.GrandSearch.SetVisible
     QMetaObject::invokeMethod(parent(), "SetVisible", Q_ARG(bool, visible));
 }
 

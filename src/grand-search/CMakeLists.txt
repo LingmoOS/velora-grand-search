@@ -292,11 +292,11 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/translations
     FILES_MATCHING PATTERN "*.qm")
 
 # dbus
-install(FILES contacts/services/com.deepin.dde.GrandSearch.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services)
+install(FILES contacts/services/com.lingmo.GrandSearch.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services)
 install(FILES contacts/services/com.deepin.dde.GrandSearch.xml DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/interfaces)
 
 # setting
-install(FILES contacts/services/com.deepin.dde.GrandSearchSetting.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services)
+install(FILES contacts/services/com.lingmo.GrandSearchSetting.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services)
 install(FILES contacts/services/com.deepin.dde.GrandSearchSetting.xml DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/interfaces)
 
 # manual

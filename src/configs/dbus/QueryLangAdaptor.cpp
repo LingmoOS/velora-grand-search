@@ -29,7 +29,7 @@ QueryLangAdaptor::~QueryLangAdaptor()
 
 bool QueryLangAdaptor::Enable()
 {
-    // handle method call org.deepin.ai.daemon.QueryLang.Enable
+    // handle method call org.lingmo.ai.daemon.QueryLang.Enable
     bool out0;
     QMetaObject::invokeMethod(parent(), "Enable", Q_RETURN_ARG(bool, out0));
     return out0;
@@ -37,7 +37,7 @@ bool QueryLangAdaptor::Enable()
 
 QString QueryLangAdaptor::Query(const QString &content)
 {
-    // handle method call org.deepin.ai.daemon.QueryLang.Query
+    // handle method call org.lingmo.ai.daemon.QueryLang.Query
     QString out0;
     QMetaObject::invokeMethod(parent(), "Query", Q_RETURN_ARG(QString, out0), Q_ARG(QString, content));
     return out0;

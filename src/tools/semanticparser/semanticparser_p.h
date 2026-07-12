@@ -9,7 +9,7 @@
 #include "vectorindex.h"
 #include "querylang.h"
 
-using namespace org::deepin::ai::daemon;
+using namespace org::lingmo::ai::daemon;
 
 namespace GrandSearch {
 class SemanticParserPrivate

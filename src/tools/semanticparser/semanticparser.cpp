@@ -96,7 +96,7 @@ bool SemanticParser::connectToVector(const QString &service)
     }
 
     qCDebug(logToolSemantic) << "Connecting to vector service - Service:" << service;
-    d->m_vector = new VectorIndex(service, "/org/deepin/ai/daemon/VectorIndex",
+    d->m_vector = new VectorIndex(service, "/org/lingmo/ai/daemon/VectorIndex",
                                   QDBusConnection::sessionBus(), this);
     d->m_vector->setTimeout(60 * 1000);
     bool valid = d->m_vector->isValid();
@@ -113,7 +113,7 @@ bool SemanticParser::connectToQueryLang(const QString &service)
     }
 
     qCDebug(logToolSemantic) << "Connecting to query language service - Service:" << service;
-    d->m_querylang = new QueryLang(service, "/org/deepin/ai/daemon/QueryLang",
+    d->m_querylang = new QueryLang(service, "/org/lingmo/ai/daemon/QueryLang",
                                    QDBusConnection::sessionBus(), this);
     d->m_querylang->setTimeout(60 * 1000);
     bool valid = d->m_querylang->isValid();

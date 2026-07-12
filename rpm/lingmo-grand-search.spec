@@ -1,11 +1,11 @@
-%global repo dde-grand-search
+%global repo lingmo-grand-search
 
-Name:           dde-grand-search
+Name:           lingmo-grand-search
 Version:        5.1.1
 Release:        1%{?fedora:%dist}
 Summary:        Deepin desktop-environment - Search module
 License:        GPLv3
-URL:            https://aptly.uniontech.com/pkg/eagle-1050/release-candidate/5LiT5Lia54mIMTA1MHdheWxhbmTpgILphY3kuLvpopgyMDIxLTA5LTE3IDEzOjQzOjMz/pool/main/d/dde-grand-search/
+URL:            https://aptly.uniontech.com/pkg/eagle-1050/release-candidate/5LiT5Lia54mIMTA1MHdheWxhbmTpgILphY3kuLvpopgyMDIxLTA5LTE3IDEzOjQzOjMz/pool/main/d/lingmo-grand-search/
 Source0:        %{name}_%{version}.orig.tar.xz
 
 BuildRequires:  dtkcore-devel >= 5.1
@@ -47,7 +47,7 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 Header files for %{name}.
 
 %prep
-%autosetup 
+%autosetup
 sed -i 's|lib/${CMAKE_LIBRARY_ARCHITECTURE}|%{_lib}|' CMakeLists.txt
 sed -i 's|lib/|%{_lib}/|' src/grand-search-dock-plugin/CMakeLists.txt
 
@@ -65,11 +65,11 @@ sed -i 's|lib/|%{_lib}/|' src/grand-search-dock-plugin/CMakeLists.txt
 %{_libdir}/dde-grand-search-daemon/lib%{name}-daemon.so
 %{_libdir}/dde-dock/plugins/libddegrandsearch_dockplugin.so
 %{_libdir}/dde-grand-search-daemon/plugins/searcher/.readme
-%{_libdir}/dde-grand-search/plugins/preview
+%{_libdir}/lingmo-grand-search/plugins/preview
 %{_datadir}/dbus-1/interfaces/com.deepin.dde.GrandSearch.xml
 %{_datadir}/dbus-1/services/com.deepin.dde.GrandSearch.service
 %{_datadir}/dbus-1/services/com.deepin.dde.daemon.GrandSearch.service
-%{_datadir}/dde-grand-search/translations
+%{_datadir}/lingmo-grand-search/translations
 %{_datadir}/glib-2.0/schemas/com.deepin.dde.dock.module.grand-search.gschema.xml
 %{_datadir}/applications/dde-grand-search-daemon.desktop
 

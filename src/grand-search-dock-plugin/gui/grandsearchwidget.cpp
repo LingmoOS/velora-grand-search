@@ -64,7 +64,7 @@ GrandSearchWidget::GrandSearchWidget(QWidget *parent)
     connect(m_grandSearchInterface, &GrandSearchInterface::VisibleChanged, this, &GrandSearchWidget::grandSearchVisibleChanged);
     qCDebug(logDock) << "GrandSearchInterface created and connected";
 
-    bool isRegistered = QDBusConnection::sessionBus().interface()->isServiceRegistered("com.deepin.dde.GrandSearch");
+    bool isRegistered = QDBusConnection::sessionBus().interface()->isServiceRegistered("com.lingmo.GrandSearch");
     qCDebug(logDock) << "Checking Grand Search D-Bus service registration - Registered:" << isRegistered;
 
     if (isRegistered) {

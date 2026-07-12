@@ -17,14 +17,14 @@ class QVariant;
 QT_END_NAMESPACE
 
 /*
- * Adaptor class for interface org.deepin.ai.daemon.VectorIndex
+ * Adaptor class for interface org.lingmo.ai.daemon.VectorIndex
  */
 class VectorIndexAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.deepin.ai.daemon.VectorIndex")
+    Q_CLASSINFO("D-Bus Interface", "org.lingmo.ai.daemon.VectorIndex")
     Q_CLASSINFO("D-Bus Introspection", ""
-"  <interface name=\"org.deepin.ai.daemon.VectorIndex\">\n"
+"  <interface name=\"org.lingmo.ai.daemon.VectorIndex\">\n"
 "    <signal name=\"IndexStatus\">\n"
 "      <arg direction=\"out\" type=\"s\" name=\"appID\"/>\n"
 "      <arg direction=\"out\" type=\"as\" name=\"files\"/>\n"

@@ -29,7 +29,7 @@ SearchPluginAdaptor::~SearchPluginAdaptor()
 
 bool SearchPluginAdaptor::Action(const QString &json)
 {
-    // handle method call com.deepin.dde.GrandSearch.SearchPlugin.Action
+    // handle method call com.lingmo.GrandSearch.SearchPlugin.Action
     bool out0;
     QMetaObject::invokeMethod(parent(), "Action", Q_RETURN_ARG(bool, out0), Q_ARG(QString, json));
     return out0;
@@ -37,7 +37,7 @@ bool SearchPluginAdaptor::Action(const QString &json)
 
 QString SearchPluginAdaptor::Search(const QString &json)
 {
-    // handle method call com.deepin.dde.GrandSearch.SearchPlugin.Search
+    // handle method call com.lingmo.GrandSearch.SearchPlugin.Search
     QString out0;
     QMetaObject::invokeMethod(parent(), "Search", Q_RETURN_ARG(QString, out0), Q_ARG(QString, json));
     return out0;
@@ -45,7 +45,7 @@ QString SearchPluginAdaptor::Search(const QString &json)
 
 bool SearchPluginAdaptor::Stop(const QString &json)
 {
-    // handle method call com.deepin.dde.GrandSearch.SearchPlugin.Stop
+    // handle method call com.lingmo.GrandSearch.SearchPlugin.Stop
     bool out0;
     QMetaObject::invokeMethod(parent(), "Stop", Q_RETURN_ARG(bool, out0), Q_ARG(QString, json));
     return out0;

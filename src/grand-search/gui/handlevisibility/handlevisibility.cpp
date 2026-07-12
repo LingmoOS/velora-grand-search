@@ -13,8 +13,8 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logGrandSearch)
 
-#define SessionManagerService "org.deepin.dde.SessionManager1"
-#define SessionManagerPath "/org/deepin/dde/SessionManager1"
+#define SessionManagerService "org.lingmo.dde.SessionManager1"
+#define SessionManagerPath "/org/lingmo/dde/SessionManager1"
 
 using namespace GrandSearch;
 DWIDGET_USE_NAMESPACE
@@ -22,7 +22,7 @@ DWIDGET_USE_NAMESPACE
 HandleVisibility::HandleVisibility(MainWindow *mainWindow, QObject *parent)
     : QObject(parent),
       m_mainWindow(mainWindow)
-// , m_sessionManagerInter(new com::deepin::SessionManager(SessionManagerService, SessionManagerPath, QDBusConnection::sessionBus(), this))
+// , m_sessionManagerInter(new com::lingmo::SessionManager(SessionManagerService, SessionManagerPath, QDBusConnection::sessionBus(), this))
 {
     qCDebug(logGrandSearch) << "Creating HandleVisibility";
     init();
@@ -44,7 +44,7 @@ void HandleVisibility::init()
 
     // 锁屏状态改变
     // FIXME: how to replace this feature on V25
-    // connect(m_sessionManagerInter, &com::deepin::SessionManager::LockedChanged, this, &HandleVisibility::onLockedChanged);
+    // connect(m_sessionManagerInter, &com::lingmo::SessionManager::LockedChanged, this, &HandleVisibility::onLockedChanged);
 }
 
 void HandleVisibility::onApplicationStateChanged(const Qt::ApplicationState state)

@@ -1,4 +1,4 @@
-Source: velora-grand-search
+Source: lingmo-grand-search
 Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -15,31 +15,31 @@ Build-Depends: debhelper (>= 9),
  qt6-tools-dev-tools,
  qt6-declarative-dev,
  cmake,
- velora-tray-loader-dev,
+ lingmo-tray-loader-dev,
  libglib2.0-dev,
  libffmpegthumbnailer-dev,
  libavformat-dev,
  libavcodec-dev,
  libtag1-dev,
  libicu-dev,
- libdeepin-pdfium-dev,
+ liblingmo-pdfium-dev,
  libjpeg62-turbo-dev,
  liblucene++-dev,
  libboost-dev,
  libboost-filesystem-dev,
- libdeepin-service-framework-dev (>1.0.9),
- libdde-shell-dev,
+ liblingmo-service-framework-dev (>1.0.9),
+ liblingmo-shell-dev,
  lingmo-desktop-base
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-grand-search
+Homepage: https://github.com/LingmoOS/lingmo-grand-search
 
-Package: dde-grand-search
+Package: lingmo-grand-search
 Architecture: any
-Replaces: dde-shell (<=1.99.30)
+Replaces: lingmo-shell (<=1.99.30)
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Recommends:
- velora-desktop-schemas (>=5.8.0.34),
- dde-daemon (>=5.12.0.31),
+ lingmo-desktop-schemas (>=5.8.0.34),
+ lingmo-daemon (>=5.12.0.31),
  startdde (>=5.6.0.34),
  deepin-anything-server[i386 amd64]
 Description: deepin desktop-environment - search module

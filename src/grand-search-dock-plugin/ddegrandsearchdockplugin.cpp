@@ -221,7 +221,7 @@ void DdeGrandSearchDockPlugin::invokedMenuItem(const QString &itemKey, const QSt
     }
 
     if (menuId == MenuOpenSetting) {
-        QProcess::startDetached("dbus-send", QStringList() << "--print-reply" << "--dest=com.deepin.dde.GrandSearchSetting" << "/com/deepin/dde/GrandSearchSetting" << "com.deepin.dde.GrandSearchSetting.Show");
+        QProcess::startDetached("dbus-send", QStringList() << "--print-reply" << "--dest=com.lingmo.GrandSearchSetting" << "/com/lingmo/GrandSearchSetting" << "com.lingmo.GrandSearchSetting.Show");
     }
 
     m_proxyInter->requestSetAppletVisible(this, pluginName(), false);

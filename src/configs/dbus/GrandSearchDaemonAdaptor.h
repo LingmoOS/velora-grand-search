@@ -17,14 +17,14 @@ class QVariant;
 QT_END_NAMESPACE
 
 /*
- * Adaptor class for interface org.deepin.dde.GrandSearchDaemon
+ * Adaptor class for interface org.lingmo.GrandSearchDaemon
  */
 class GrandSearchDaemonAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.deepin.dde.GrandSearchDaemon")
+    Q_CLASSINFO("D-Bus Interface", "org.lingmo.GrandSearchDaemon")
     Q_CLASSINFO("D-Bus Introspection", ""
-"  <interface name=\"org.deepin.dde.GrandSearchDaemon\">\n"
+"  <interface name=\"org.lingmo.GrandSearchDaemon\">\n"
 "    <signal name=\"Matched\">\n"
 "      <arg direction=\"out\" type=\"s\" name=\"session\"/>\n"
 "    </signal>\n"

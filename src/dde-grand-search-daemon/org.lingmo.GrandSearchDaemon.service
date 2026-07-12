@@ -1,3 +1,3 @@
 [D-BUS Service]
-Name=org.deepin.dde.GrandSearchDaemon
+Name=org.lingmo.GrandSearchDaemon
 Exec=/usr/bin/dde-grand-search-daemon

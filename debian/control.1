@@ -1,4 +1,4 @@
-Source: dde-grand-search
+Source: lingmo-grand-search
 Section: utils
 Priority: optional
 Maintainer: Deepin Packages Builder <packages@deepin.com>
@@ -19,24 +19,24 @@ Build-Depends: debhelper (>= 9),
  libavcodec-dev,
  libtag1-dev,
  libicu-dev,
- libdeepin-pdfium-dev,
+ liblingmo-pdfium-dev,
  libjpeg62-turbo-dev,
  liblucene++-dev,
  libgsettings-qt-dev,
  libboost-dev,
  libboost-filesystem-dev,
- libdeepin-service-framework-dev (>1.0.9),
+ liblingmo-service-framework-dev (>1.0.9),
  lingmo-desktop-base
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org/
 
-Package: dde-grand-search
+Package: lingmo-grand-search
 Architecture: any
-Replaces: dde-shell (<=1.99.30)
+Replaces: lingmo-shell (<=1.99.30)
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Recommends:
- velora-desktop-schemas (>=5.8.0.34),
- dde-daemon (>=5.12.0.31),
+ lingmo-desktop-schemas (>=5.8.0.34),
+ lingmo-daemon (>=5.12.0.31),
  startdde (>=5.6.0.34),
  deepin-anything-server[i386 amd64f]
 Description: deepin desktop-environment - search module

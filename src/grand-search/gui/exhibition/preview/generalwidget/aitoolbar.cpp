@@ -287,7 +287,7 @@ void AiToolBarInner::onMenuTriggered(QAction *action)
 
 void AiToolBarInner::onOpenUosAi()
 {
-    QDBusInterface notification("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", QDBusConnection::sessionBus());
+    QDBusInterface notification("com.lingmo.copilot", "/com/lingmo/copilot", "com.lingmo.copilot", QDBusConnection::sessionBus());
     notification.call(QDBus::Block, "launchChatPage");
 }
 
@@ -297,7 +297,7 @@ void AiToolBarInner::onSummary()
     QMap<QString, QString> params;
     params.insert("file", m_filePath);
     params.insert("defaultPrompt", tr("Summarize this document for me and provide me with a clear result directly, without any unnecessary content."));
-    QDBusInterface notification("com.deepin.copilot", "/org/deepin/copilot/chat", "org.deepin.copilot.chat", QDBusConnection::sessionBus());
+    QDBusInterface notification("com.lingmo.copilot", "/org/lingmo/copilot/chat", "org.lingmo.copilot.chat", QDBusConnection::sessionBus());
     QString error = notification.call(QDBus::Block, "inputPrompt", "", QVariant::fromValue(params)).errorMessage();
     if (!error.isEmpty()) {
         qCWarning(logGrandSearch) << "Failed to send prompt to UOS AI - Operation:" << m_summaryAction->text() << "Error:" << error;
@@ -313,7 +313,7 @@ void AiToolBarInner::onTranslation()
     QMap<QString, QString> params;
     params.insert("file", m_filePath);
     params.insert("defaultPrompt", tr("Translate this document for me and provide me with a clear result directly, without any unnecessary content."));
-    QDBusInterface notification("com.deepin.copilot", "/org/deepin/copilot/chat", "org.deepin.copilot.chat", QDBusConnection::sessionBus());
+    QDBusInterface notification("com.lingmo.copilot", "/org/lingmo/copilot/chat", "org.lingmo.copilot.chat", QDBusConnection::sessionBus());
     QString error = notification.call(QDBus::Block, "inputPrompt", "", QVariant::fromValue(params)).errorMessage();
     if (!error.isEmpty()) {
         qCWarning(logGrandSearch) << "Failed to send prompt to UOS AI - Operation:" << m_translationAction->text() << "Error:" << error;
@@ -329,7 +329,7 @@ void AiToolBarInner::onExtension()
     QMap<QString, QString> params;
     params.insert("file", m_filePath);
     params.insert("defaultPrompt", tr("Expand this document for me and provide me with a clear and expanded result directly, without any unnecessary content."));
-    QDBusInterface notification("com.deepin.copilot", "/org/deepin/copilot/chat", "org.deepin.copilot.chat", QDBusConnection::sessionBus());
+    QDBusInterface notification("com.lingmo.copilot", "/org/lingmo/copilot/chat", "org.lingmo.copilot.chat", QDBusConnection::sessionBus());
     QString error = notification.call(QDBus::Block, "inputPrompt", "", QVariant::fromValue(params)).errorMessage();
     if (!error.isEmpty()) {
         qCWarning(logGrandSearch) << "Failed to send prompt to UOS AI - Operation:" << m_extensionAction->text() << "Error:" << error;
@@ -341,7 +341,7 @@ void AiToolBarInner::onExtension()
 
 void AiToolBarInner::onKnowledge()
 {
-    QDBusInterface notification("com.deepin.copilot", "/org/deepin/copilot/chat", "org.deepin.copilot.chat", QDBusConnection::sessionBus());
+    QDBusInterface notification("com.lingmo.copilot", "/org/lingmo/copilot/chat", "org.lingmo.copilot.chat", QDBusConnection::sessionBus());
     QString error = notification.call(QDBus::Block, "sendToKnowledgeBase", QStringList(m_filePath)).errorMessage();
     if (!error.isEmpty()) {
         qCWarning(logGrandSearch) << "Failed to add file to knowledge base - File:" << m_filePath << "Error:" << error;

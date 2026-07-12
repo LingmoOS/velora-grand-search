@@ -119,7 +119,7 @@ if (${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64" AND OPT_ENABLE_AI_SEARCH)
 endif()
 
 # 手动生成xml描述文件
-# qdbuscpp2xml -A grandsearchplugininterfacev1.h -o com.deepin.dde.grandsearch.searchplugin.xml
+# qdbuscpp2xml -A grandsearchplugininterfacev1.h -o com.lingmo.grandsearch.searchplugin.xml
 set(PLUGIN_ABSTRACT_IFS
     searchplugin/interface/abstract/grandsearchplugininterfacev1.h
 )
@@ -212,7 +212,7 @@ target_link_libraries(${BIN_NAME} PRIVATE
 
 install(TARGETS ${BIN_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES grand-search-daemon.json DESTINATION share/deepin-service-manager/other/)
-install(FILES org.deepin.dde.GrandSearchDaemon.service DESTINATION ${CMAKE_INSTALL_FULL_DATADIR}/dbus-1/services)
+install(FILES org.lingmo.GrandSearchDaemon.service DESTINATION ${CMAKE_INSTALL_FULL_DATADIR}/dbus-1/services)
 
 # 扩展搜索插件目录
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/.readme DESTINATION ${PLUGIN_SEARCHER_DIR})

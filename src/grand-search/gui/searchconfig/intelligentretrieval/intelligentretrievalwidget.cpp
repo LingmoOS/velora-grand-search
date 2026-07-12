@@ -38,7 +38,7 @@ using namespace GrandSearch;
 #define INER_APP_NAME "dde-grand-search"
 static QDBusMessage createQueryLangMsg(const QString &method)
 {
-    QDBusMessage msg = QDBusMessage::createMethodCall("org.deepin.ai.daemon.QueryLang", "/org/deepin/ai/daemon/QueryLang",
+    QDBusMessage msg = QDBusMessage::createMethodCall("org.lingmo.ai.daemon.QueryLang", "/org/lingmo/ai/daemon/QueryLang",
                                                       "org.deepin.ai.daemon.QueryLang", method);
     return msg;
 }
@@ -46,7 +46,7 @@ static QDBusMessage createQueryLangMsg(const QString &method)
 #ifdef VECTOR_SEARCH
 static QDBusMessage createVectorMsg(const QString &method)
 {
-    QDBusMessage msg = QDBusMessage::createMethodCall("org.deepin.ai.daemon.VectorIndex", "/org/deepin/ai/daemon/VectorIndex",
+    QDBusMessage msg = QDBusMessage::createMethodCall("org.lingmo.ai.daemon.VectorIndex", "/org/lingmo/ai/daemon/VectorIndex",
                                                       "org.deepin.ai.daemon.VectorIndex", method);
     return msg;
 }
